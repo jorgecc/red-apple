@@ -103,4 +103,4 @@ foreach($stationList as &$stat) {
   [1]=>
  */
 
-echo $blade->run('dashboard',['placemarks'=>$placemarks,'stationList'=>$stationList]);
+echo $blade->run('dashboard',['placemarks'=>$placemarks,'stationList'=>$stationList,'year'=>$year]);
