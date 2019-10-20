@@ -14,6 +14,9 @@ $pdo=new PdoOne('mysql','127.0.0.1','root','abc.123','weather');
 $pdo->logLevel=3;
 $pdo->open();
 
+$year=@$_GET['year'];
+if (!$year) $year=2019;
+
 $stationList=$pdo->select('*')->from('stations')->toList();
 
 use Phpml\Regression\LeastSquares;
@@ -49,7 +52,7 @@ foreach($stationList as &$stat) {
 
             $regression = new LeastSquares();
             $regression->train($x, $y);
-            $stat['Predict'] = $regression->predict([2020]);
+            $stat['Predict'] = $regression->predict([$year]);
         } 
         
 
