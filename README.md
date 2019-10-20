@@ -9,3 +9,5 @@ Cultivate red apples (like this one 🍎) needs a special weather and where once
 Our project is to measure it visually, and for this task, we will use the tool supplied by the NASA.
 
 But, It is not only about red apples but about the ecology and economy of our world. Can we predict the future for a specific location?. Let's find it out.
+
+![](img1.jpg)
