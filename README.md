@@ -11,3 +11,10 @@ Our project is to measure it visually, and for this task, we will use the tool s
 But, It is not only about red apples but about the ecology and economy of our world. Can we predict the future for a specific location?. Let's find it out.
 
 ![](img1.jpg)
+
+## Instructions
+
+* Install the MYSQL 8.x database (the default user is root/abc.123)
+* The dump of the database is on mysql/weather.sql
+* Add the libraries (using PHP Composer)
+* The webpage is on example/nasa.php
