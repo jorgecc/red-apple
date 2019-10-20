@@ -1,0 +1,46 @@
+{
+  "name": "jorgecc/red-apple",
+  "description": "A crawler generator",
+  "type": "library",
+  "keywords": ["blade","template","view","php","templating"],
+  "homepage": "https://github.com/jorgecc/red-apple",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jorge Patricio Castro Castillo",
+      "email": "jcastro@eftec.cl"
+    }],
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.2"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "ext-json": "*",
+    "eftec/minilang": "^2.11",
+    "eftec/pdoone": "^1.12",
+    "ext-dom": "*",
+    "ext-curl": "*",
+    "eftec/documentstoreone": "1.10",
+    "php-ai/php-ml": "0.8.0",
+    "eftec/bladeone": "3.31"
+  },
+  "archive": {
+    "exclude": ["/examples"]
+  },
+  "autoload": {
+    "psr-4": {
+      "eftec\\SpiderOne\\": "lib/",
+      "eftec\\tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  }
+}
